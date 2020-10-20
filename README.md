@@ -15,3 +15,5 @@ if(Input.GetMouseButtonDown(0))
     agent.SetDestination(hit.point)
   }
 }
+
+If you wrote it correctly, you should see two slots pop up on the AI Controller script component. If so, add in the relevant to each of the slots. After that you should see your character moving to where ever you click on the surfaces containing the baked NavMesh.
