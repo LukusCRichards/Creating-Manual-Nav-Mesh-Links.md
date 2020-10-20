@@ -1,10 +1,5 @@
-# Creating an AI Nav Mesh in Unity.md
-This is a tutorial on how to create a Nav Mesh for the AI so it can move around the space you allow it to
+# Making an AI move on the Nav Mesh in Unity.md
+This is a tutorial on how to make an AI move to an area you click on in the Nav Mesh
 
-After starting up Unity, 
+After starting up a 3D Unity project, create a C# script and give it an applicable name, such as **AI Controller**. When you have created it, open it and delete the **System.Collections** and **System.Collections.Generic** code at the top, but keep the using **UnityEngine**. Then under the using UnityEngine code, add in **using UnityEngine.AI** as the script will not work without it.
 
-Next, create a C# script and give it an applicable name, such as **AI Controller**.
-
-To make the Nav Mesh link, first make sure that you have a baked surface for your AI character to walk on, otherwise it will not be able to move to it. If you want it to jump onto an area above the character or across a gap, then create an empty gameobject and call it **"Link"** while making sure it is parented to the associated platform to make it easier to remember which one it belongs to.
-
-Next, add the **Nav Mesh Link** component to the Link gameobject
